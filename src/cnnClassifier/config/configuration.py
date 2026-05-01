@@ -47,7 +47,7 @@ class ConfigurationManager:
             params_classes=params['CLASSES']
         )
     
-     def get_prepare_callback_config(self) -> PrepareCallbacksConfig:
+    def get_prepare_callback_config(self) -> PrepareCallbacksConfig:
         config = self.config['prepare_callbacks']
         model_ckpt_dir = os.path.dirname(config['checkpoint_model_filepath'])
 
